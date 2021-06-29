@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.kh.test.dto.PersonDTO;
+import com.test.dao.PersonDAO;
+
 
 
 @WebServlet("*.msg")

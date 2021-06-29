@@ -5,35 +5,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>outputView</title>
+<title>Insert title here</title>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
 </head>
 <body>
-
-	<table border=1 align=center>
+	<table border="1">
 		<tr>
-			<th colspan="4">Preson List
+			<th colspan=4>Person List</th>
 		</tr>
 		<tr>
-			<th>ID
-			<th>NAME
-			<th>CONTACT
-			<th>DATE
+			<th>ID</th>
+			<th>NAME</th>
+			<th>CONTACT</th>
+			<th>Date</th>
 		</tr>
-		<c:forEach var="i" items="${list}">
+		<c:forEach var="item" items="${list}">
 			<tr>
-				<td>${i.id}
-				<td>${i.name}
-				<td>${i.contact}
-				<td>${i.reg_date}
+				<td>${item.id}</td>
+				<td>${item.name}</td>
+				<td>${item.contact}</td>
+				<td>${item.reg_date}</td>
 			</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="4" align=center><a href="index.jsp"><button>Back</button></a>
+			<td colspan="4" align=center><a href="index.jsp"><button>BACK</button></a></td>
 		</tr>
 	</table>
-
-
 </body>
 </html>
